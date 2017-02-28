@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example 6</title>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://jashkenas.github.io/underscore/underscore-min.js"></script>
+    <script src="http://jashkenas.github.io/backbone/backbone-min.js"></script>
+</head>
+<body>
+  Name:<input id="txtName" type="text" />
+  Hello <span id="nameSpan"></span>!
+  <script type="text/javascript">
+    var model = new Backbone.Model({name: ''});
+    model.on('change:name', function() {
+      $('#nameSpan').html(model.get('name'));
+    });
+    $('#txtName').on('keyup',function() {
+      model.set('name',$('#txtName').val());
+    });
+  </script>
+</body>
+</html>
