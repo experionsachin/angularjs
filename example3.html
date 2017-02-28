@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example3</title>
+</head>
+<body>
+	Name:<input id="txtName" type="text" />
+	Hello world!
+	<script type="text/javascript">
+		var temp=document.getElementById('txtName');
+		temp.addEventListener('keyup',function() {
+			var text = temp.value;
+			console.log('New text is "' + text + '"');
+		})
+	</script>
+</body>
+</html>
