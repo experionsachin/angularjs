@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Example 10 Angular</title>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+	<script type="text/javascript">
+			function NameCtrl($scope) {
+				$scope.firstName="Sachin";
+				$scope.lastName="Kumar";
+			}
+	</script>
+</head>
+<body ng-controller="NameCtrl">
+FirstName:<input ng-model="firstName" id="txtFirstName" type="text" style="display: block;" />
+<br>
+LastName:<input ng-model="lastName" id="txtLastName" type="text" style="display: block;" />
+<br>
+Hello {{firstName}} {{lastName}}
+</body>
+</html>
