@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example2</title>
+</head>
+<body>
+	Name:<input id="textInput" type="text" />
+	Hello <span id="nameDiv"></span>!
+	<script >
+		var temp = document.getElementById('textInput');
+		temp.addEventListener('keyup', function() {
+			console.log('Got keyup event');
+		});
+	</script>
+</body>
+</html>
