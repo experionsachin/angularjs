@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example4</title>
+</head>
+<body>
+	Name:<input id="txtName" type="text" />
+	Hello <span id="nameDiv"></span>
+	<script type="text/javascript">
+		var temp = document.getElementById('txtName'),
+				value = document.getElementById('nameDiv');
+		temp.addEventListener('keyup',function() {
+			var text = temp.value;
+			value.innerHTML = text;
+		});
+	</script>
+</body>
+</html>
