@@ -1,14 +1,23 @@
 [
 	{
 		"name": "China",
-		"population": 32432453243
+		"population": 32432453243,
+		"flagURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+		"capital": "Beijing",
+		"gdp": 546465
 	},
 	{
 		"name": "India",
-		"population": 30432453243
+		"population": 30432453243,
+		"flagURL": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+		"capital": "New Delhi",
+		"gdp": 435456
 	},
 	{
 		"name": "USA",
-		"population": 2432453243
+		"population": 2432453243,
+		"flagURL": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+		"capital": "New York",
+		"gdp": 134251
 	}
 ]
