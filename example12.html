@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Example 12 Angular</title>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+	<script type="text/javascript">
+		var myApp = angular.module('myApp', []);
+		myApp.controller('NameCtrl', function($scope) {
+			$scope.firstName = 'Sachin';
+			$scope.$watch('lastName', function(newValue, oldValue) {
+				console.log('New value is ' + newValue);
+			});
+			setTimeout(function(){
+          $scope.lastName = "Kumar";
+        }, 1000);
+			});
+	</script>
+</head>
+<body ng-controller="NameCtrl">
+	First Name:<input ng-model="firstName" id="txtFirstName" type="text" style="display: block;" />
+	<br>
+	Last Name:<input ng-model="lastName" id="txtLasssstName" type="text" style="display: block;" />
+	<br>
+	Hello {{firstName}} {{lastName}}
+</body>
+</html>
